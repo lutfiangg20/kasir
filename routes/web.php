@@ -3,6 +3,8 @@
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Application;
+use App\Http\Controllers\TokoController;
+use App\Http\Controllers\BarangController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\KategoriController;
 
@@ -36,6 +38,9 @@ Route::get('/pembelian', function () {
 
 Route::get('/kategori',[KategoriController::class,'index'])->name('toko.kategori.index');
 Route::post('/kategori/store',[KategoriController::class,'store'])->name('toko.kategori.store');
+
+Route::get('/barang',[BarangController::class,'index'])->name('toko.barang.index');
+Route::post('/barang/store',[BarangController::class,'store'])->name('toko.barang.store');
 
 
 Route::middleware('auth')->group(function () {

@@ -7,6 +7,9 @@ const Table = (kategori) => {
                     <tr>
                         <th>No</th>
                         <th>Nama</th>
+                        <th>Kategori</th>
+                        <th>Harga</th>
+                        <th>Stok</th>
                     </tr>
                 </thead>
                 <tbody>
